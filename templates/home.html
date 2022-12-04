@@ -1,0 +1,6 @@
+<h1>Test chapter from Helmut </h1>
+<div class="image-box">
+  {% for imageUpload in object_list %}
+    <img src="{{ imageUpload.cover.url}}" alt="{{ imageUpload.title }}">
+  {% endfor %}
+</div>
