@@ -7,3 +7,8 @@ class imageUpload(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Picture(models.Model):
+    file = models.ImageField()
+    caption = models.CharField(max_length=255)
